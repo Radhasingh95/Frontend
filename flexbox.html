@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            border:2px solid red;
+            display:flex;
+            height: 80vh;
+            justify-content: center; /*main axis*/
+            align-items: center; /*cross axis when one line*/
+            align-content:center; /*when more lines*/
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: wrap; */
+            /* gap:5px; */
+            row-gap: 5px;
+            column-gap: 10px;
+            gap:5px 10px;
+        }
+        .item{
+            flex-grow:1;
+            height:92px;
+            width:92px;
+            background-color: red;
+            border:2px solid black;
+            /* margin:5px; */
+        }
+        .item1{
+            flex-shrink:1;
+        }
+        .item2{
+            /* flex-grow: 2; */
+            align-self:flex-start;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">13</div>
+            <div class="item">14</div>
+            <div class="item">15</div>
+            <div class="item">16</div>
+            <div class="item">17</div>
+            <div class="item">18</div>
+            <div class="item">19</div>
+            <div class="item">20</div>
+            <div class="item">21</div>
+            <div class="item">22</div>
+            <div class="item">23</div>
+            <div class="item">24</div>
+        </div>
+    </main>
+</body>
+</html>

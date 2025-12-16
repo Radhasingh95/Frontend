@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sizing units</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html{
+        font-size:12px;
+      }
+      .box {
+        background-color: blue;
+        /* width:2080px; */
+        width: 80vw;
+        margin: auto;
+        height: 10vh;
+      }
+      .container {
+        background-color: blue;
+        /* width:2080px; */
+        width: 80vw;
+        /* height: 80vh; */
+        min-height:80vh;
+        margin: 23px auto;
+        font-size:16px; /* default font size is 16px */
+      }
+      .container p{
+        /* font-size: 2em; */
+        font-size: 2rem;
+      }
+      .mycont{
+        background-color: red;
+        color:yellow;
+        font-size: 22px;
+        width:100vmin;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">hello</div>
+    <div class="container">
+        container
+        <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam optio
+      ipsa magni nihil. Molestias porro quo delectus ea obcaecati, sed
+      perferendis cum quam modi deleniti itaque doloremque inventore maiores
+      ullam eligendi molestiae! Quas voluptatem doloribus laboriosam maiores,
+      earum iusto voluptates dicta porro, voluptas suscipit culpa cumque.
+      Quisquam libero placeat obcaecati velit quae voluptate ipsam minima
+      dolores.
+      </p>
+    </div>
+    <div class="mycont">
+        I m another container
+    </div>
+  </body>
+</html>
