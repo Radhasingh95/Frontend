@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid blue;
+            /* display:inline; */
+            display:inline-block;
+            padding:45px; /*p-top will not work in case of inline, so we can use inline-block instead*/
+            margin: 45px; /*same as above*/
+        }
+        .box1{
+            border: 2px solid blue;
+            display:none;  /*space gayab*/
+            /* visibility:hidden; */
+        }
+
+</style>
+</head>
+<body>
+    <div class="box1">I am a box</div>
+    <div class="box">also a nice box</div>
+    <span>I am good</span>
+    <span>box</span>
+</body>
+</html>
